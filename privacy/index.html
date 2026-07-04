@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AlergiGuard — Política de Privacidad / Privacy Policy</title>
+<meta name="description" content="Política de privacidad de AlergiGuard. Tus datos de salud se guardan en tu dispositivo. Sin publicidad, sin venta de datos.">
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --card: #ffffff;
+    --ink: #1c2128;
+    --muted: #5b6675;
+    --accent: #2f6df6;
+    --accent-soft: #eaf1fe;
+    --border: #e3e7ec;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 20px 80px; }
+  header {
+    background: linear-gradient(135deg, #2f6df6 0%, #5b8def 100%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 28px 24px;
+    margin-bottom: 8px;
+  }
+  header h1 { margin: 0 0 4px; font-size: 1.5rem; }
+  header .meta { font-size: .85rem; opacity: .9; }
+  .toggle {
+    display: flex; gap: 8px; margin: 18px 0 8px;
+  }
+  .toggle button {
+    flex: 1; padding: 10px 12px; border: 1px solid var(--border);
+    background: var(--card); color: var(--muted); border-radius: 10px;
+    font-size: .95rem; font-weight: 600; cursor: pointer; transition: .15s;
+  }
+  .toggle button.active {
+    background: var(--accent-soft); color: var(--accent); border-color: var(--accent);
+  }
+  section.lang { display: none; }
+  section.lang.active { display: block; }
+  h2 {
+    font-size: 1.05rem; margin: 26px 0 6px; padding-top: 6px;
+    border-top: 1px solid var(--border);
+  }
+  h2:first-of-type { border-top: none; }
+  p, li { color: var(--ink); }
+  ul { padding-left: 20px; margin: 8px 0; }
+  li { margin: 4px 0; }
+  .note {
+    background: var(--accent-soft); border: 1px solid #cfe0fd;
+    border-radius: 10px; padding: 12px 14px; font-size: .9rem; color: var(--muted);
+    margin: 14px 0;
+  }
+  a { color: var(--accent); }
+  footer { margin-top: 32px; font-size: .82rem; color: var(--muted); text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>AlergiGuard — Política de Privacidad / Privacy Policy</h1>
+    <div class="meta">
+      Última actualización / Last updated: 2026-06-26 ·
+      App: AlergiGuard (com.alergiguard.app) ·
+      Contacto: <a href="mailto:alergiguardapp@gmail.com" style="color:#fff;text-decoration:underline;">alergiguardapp@gmail.com</a>
+    </div>
+  </header>
+
+  <div class="toggle">
+    <button id="btn-es" class="active" onclick="setLang('es')">Español</button>
+    <button id="btn-en" onclick="setLang('en')">English</button>
+  </div>
+
+  <!-- ESPAÑOL -->
+  <section id="es" class="lang active">
+    <h2>1. Introducción</h2>
+    <p>AlergiGuard ayuda a gestionar alergias alimentarias y ambientales. Respetamos tu privacidad y diseñamos la app para que tu información de salud personal permanezca en tu propio dispositivo. Esta política explica qué datos se tratan, para qué y con quién.</p>
+
+    <h2>2. Datos guardados en tu dispositivo (solo local)</h2>
+    <p>La siguiente información se guarda ÚNICAMENTE en tu dispositivo y NO se envía ni almacena en ningún servidor de AlergiGuard:</p>
+    <ul>
+      <li>Tu perfil y perfiles familiares (nombre, grupo sanguíneo, contacto de emergencia)</li>
+      <li>Tus alergias declaradas y personalizadas</li>
+      <li>Tu diario de síntomas</li>
+      <li>Tus medicamentos y recordatorios</li>
+      <li>Ajustes de la app (idioma, tema, etc.)</li>
+    </ul>
+    <p>No disponemos de una base de datos que recopile o centralice esta información.</p>
+
+    <h2>3. Servicios de terceros</h2>
+    <p>Algunas funciones opcionales usan proveedores externos para funcionar. Solo tratan lo necesario para ofrecer la función, y no usamos tus datos para publicidad ni perfilado:</p>
+    <ul>
+      <li><strong>Asistente IA (AlergiBot):</strong> al usar el chat, la pregunta que escribes y tus alergias configuradas se envían a la API Gemini de Google para generar la respuesta.</li>
+      <li><strong>Compras y suscripciones:</strong> gestionadas por Google Play Billing y RevenueCat para procesar y validar las compras.</li>
+      <li><strong>Escáner de ingredientes:</strong> las fotos de listas de ingredientes pueden enviarse a un servicio de reconocimiento de texto (OCR) para leerlas.</li>
+      <li><strong>Calidad del aire y polen:</strong> se usa tu ubicación aproximada para solicitar datos ambientales a proveedores externos.</li>
+      <li>Las búsquedas por código de barras pueden consultar bases de datos públicas de productos.</li>
+    </ul>
+    <p>Cada proveedor trata los datos según su propia política de privacidad.</p>
+
+    <h2>4. Permisos</h2>
+    <p>La app puede solicitar estos permisos, todos opcionales y usados solo para su finalidad:</p>
+    <ul>
+      <li><strong>Cámara:</strong> para escanear códigos de barras y listas de ingredientes. AlergiGuard no graba, usa ni almacena audio.</li>
+      <li><strong>Ubicación:</strong> para mostrar la calidad del aire y el polen locales.</li>
+      <li><strong>Notificaciones:</strong> para recordatorios de medicación y alertas de polen.</li>
+    </ul>
+
+    <h2>5. Sin publicidad, sin venta de datos</h2>
+    <p>AlergiGuard no muestra publicidad de terceros, no vende tus datos personales y no crea perfiles publicitarios.</p>
+
+    <h2>6. Conservación y eliminación de datos</h2>
+    <p>Como tus datos personales se guardan en local, mantienes el control:</p>
+    <ul>
+      <li>Puedes borrar entradas dentro de la app.</li>
+      <li>Puedes borrar todos los datos desde los ajustes del dispositivo ("Borrar datos") o desinstalando la app.</li>
+    </ul>
+    <p>Los registros de compra los gestionan Google Play y RevenueCat según sus políticas.</p>
+
+    <h2>7. Menores</h2>
+    <p>AlergiGuard está pensada para uso de adultos (por ejemplo, padres que gestionan las alergias de un hijo). No está dirigida al uso autónomo por niños pequeños.</p>
+
+    <h2>8. Tus derechos (RGPD / UE)</h2>
+    <p>Tienes derecho a acceder, rectificar y eliminar tus datos. Como tus datos de salud están en tu dispositivo, puedes ejercer estos derechos directamente en la app o en los ajustes del dispositivo. Para cualquier duda: <a href="mailto:alergiguardapp@gmail.com">alergiguardapp@gmail.com</a>.</p>
+
+    <h2>9. Seguridad</h2>
+    <p>Aplicamos minimización de datos y mantenemos los datos de salud en el dispositivo. Ningún método de transmisión o almacenamiento es 100% seguro, pero tomamos medidas razonables para proteger tu información.</p>
+
+    <h2>10. Cambios</h2>
+    <p>Podemos actualizar esta política. La fecha de "Última actualización" reflejará los cambios, y los cambios importantes se comunicarán en la app o en la ficha de la tienda.</p>
+
+    <h2>11. Contacto</h2>
+    <p>Para cualquier consulta o solicitud de privacidad: <a href="mailto:alergiguardapp@gmail.com">alergiguardapp@gmail.com</a></p>
+  </section>
+
+  <!-- ENGLISH -->
+  <section id="en" class="lang">
+    <h2>1. Introduction</h2>
+    <p>AlergiGuard helps people manage food and environmental allergies. We respect your privacy and designed the app to keep your personal health information on your own device. This policy explains what data is processed, why, and with whom.</p>
+
+    <h2>2. Data stored on your device (local only)</h2>
+    <p>The following information is stored ONLY locally on your device and is NOT sent to or stored on any AlergiGuard server:</p>
+    <ul>
+      <li>Your profile and family profiles (name, blood type, emergency contact)</li>
+      <li>Your declared allergies and custom allergies</li>
+      <li>Your symptom diary entries</li>
+      <li>Your medications and reminders</li>
+      <li>App settings (language, theme, etc.)</li>
+    </ul>
+    <p>We do not operate a database that collects or centralises this information.</p>
+
+    <h2>3. Third-party services</h2>
+    <p>Some optional features rely on third-party providers to work. These providers process only what is needed to deliver the feature, and we do not use your data for advertising or profiling:</p>
+    <ul>
+      <li><strong>AI Assistant (AlergiBot):</strong> when you use the chat, the question you type and your configured allergies are sent to Google's Gemini API to generate a response.</li>
+      <li><strong>Purchases and subscriptions:</strong> handled by Google Play Billing and RevenueCat to process and validate purchases.</li>
+      <li><strong>Ingredient scanner:</strong> photos of ingredient lists may be sent to a text-recognition (OCR) service to read them.</li>
+      <li><strong>Air quality and pollen:</strong> your approximate location is used to request environmental data from external providers.</li>
+      <li>Barcode lookups may query public product databases.</li>
+    </ul>
+    <p>Each provider processes data under its own privacy policy.</p>
+
+    <h2>4. Permissions</h2>
+    <p>The app may request the following permissions, all optional and only used for their stated purpose:</p>
+    <ul>
+      <li><strong>Camera:</strong> to scan barcodes and ingredient lists. AlergiGuard does not record, use, or store any audio.</li>
+      <li><strong>Location:</strong> to show local air quality and pollen levels.</li>
+      <li><strong>Notifications:</strong> to send medication reminders and pollen alerts.</li>
+    </ul>
+
+    <h2>5. No advertising, no data sale</h2>
+    <p>AlergiGuard does not display third-party advertising, does not sell your personal data, and does not build advertising profiles.</p>
+
+    <h2>6. Data retention and deletion</h2>
+    <p>Because your personal data is stored locally, you remain in control of it:</p>
+    <ul>
+      <li>You can delete entries within the app.</li>
+      <li>You can clear all data via your device settings ("Clear data") or by uninstalling the app.</li>
+    </ul>
+    <p>Purchase records are managed by Google Play and RevenueCat according to their policies.</p>
+
+    <h2>7. Children</h2>
+    <p>AlergiGuard is intended to be used by adults (for example, parents managing a child's allergies). It is not directed at young children for independent use.</p>
+
+    <h2>8. Your rights (GDPR / EU)</h2>
+    <p>You have the right to access, rectify, and delete your data. As your health data is stored on your device, you can exercise these rights directly within the app or your device settings. For any questions, contact us at <a href="mailto:alergiguardapp@gmail.com">alergiguardapp@gmail.com</a>.</p>
+
+    <h2>9. Security</h2>
+    <p>We apply data-minimisation and keep personal health data on the device. No method of transmission or storage is 100% secure, but we take reasonable measures to protect your information.</p>
+
+    <h2>10. Changes</h2>
+    <p>We may update this policy. The "Last updated" date will reflect any changes, and significant changes will be communicated within the app or store listing.</p>
+
+    <h2>11. Contact</h2>
+    <p>For any privacy question or request: <a href="mailto:alergiguardapp@gmail.com">alergiguardapp@gmail.com</a></p>
+  </section>
+
+  <footer>© 2026 David Sánchez · AlergiGuard · com.alergiguard.app</footer>
+</div>
+
+<script>
+  function setLang(l) {
+    document.getElementById('es').classList.toggle('active', l === 'es');
+    document.getElementById('en').classList.toggle('active', l === 'en');
+    document.getElementById('btn-es').classList.toggle('active', l === 'es');
+    document.getElementById('btn-en').classList.toggle('active', l === 'en');
+    document.documentElement.lang = l;
+  }
+</script>
+</body>
+</html>
