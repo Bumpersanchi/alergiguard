@@ -1,0 +1,29 @@
+name: Supabase keep-alive
+
+on:
+  schedule:
+    - cron: '0 7 */3 * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping redeem_gift_code (no-op)
+        env:
+          SUPABASE_URL: https://vdtrfqvflagnydpyusan.supabase.co
+          SUPABASE_ANON_KEY: sb_publishable_SYRjyLbENZWZLg5Saa1IRw_U9jJhk1V
+        run: |
+          echo "Pinging Supabase to keep it awake..."
+          HTTP=$(curl -sS -X POST "$SUPABASE_URL/rest/v1/rpc/redeem_gift_code" \
+            -H "apikey: $SUPABASE_ANON_KEY" \
+            -H "Authorization: Bearer $SUPABASE_ANON_KEY" \
+            -H "Content-Type: application/json" \
+            -d '{"p_code":"__KEEPALIVE_NOOP__"}' \
+            --max-time 30 \
+            -o response.txt -w '%{http_code}')
+          echo "HTTP $HTTP - respuesta: $(cat response.txt)"
+          if [ "$HTTP" != "200" ]; then
+            echo "::error::Supabase no respondio 200 (posible pausa o incidencia)"
+            exit 1
+          fi
