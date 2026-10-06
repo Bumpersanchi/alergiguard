@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AlergiGuard — Política de Privacidad / Privacy Policy</title>
-<meta name="description" content="Política de privacidad de AlergiGuard. Tus datos de salud se guardan en tu dispositivo. Sin publicidad, sin venta de datos.">
+<meta name="description" content="Política de privacidad de AlergiGuard. Tus datos de salud se guardan en tu dispositivo. Sin redes publicitarias, sin venta de datos.">
 <style>
   :root {
     --bg: #f6f7f9;
@@ -69,7 +69,7 @@
   <header>
     <h1>AlergiGuard — Política de Privacidad / Privacy Policy</h1>
     <div class="meta">
-      Última actualización / Last updated: 2026-06-26 ·
+      Última actualización / Last updated: 2026-10-06 ·
       App: AlergiGuard (com.alergiguard.app) ·
       Contacto: <a href="mailto:alergiguardapp@gmail.com" style="color:#fff;text-decoration:underline;">alergiguardapp@gmail.com</a>
     </div>
@@ -86,7 +86,7 @@
     <p>AlergiGuard ayuda a gestionar alergias alimentarias y ambientales. Respetamos tu privacidad y diseñamos la app para que tu información de salud personal permanezca en tu propio dispositivo. Esta política explica qué datos se tratan, para qué y con quién.</p>
 
     <h2>2. Datos guardados en tu dispositivo (solo local)</h2>
-    <p>La siguiente información se guarda ÚNICAMENTE en tu dispositivo y NO se envía ni almacena en ningún servidor de AlergiGuard:</p>
+    <p>La siguiente información se guarda ÚNICAMENTE en tu dispositivo y NO se almacena en ningún servidor de AlergiGuard (solo cuando usas una función de IA se envía puntualmente lo que se describe en el apartado 3, para generar la respuesta):</p>
     <ul>
       <li>Tu perfil y perfiles familiares (nombre, grupo sanguíneo, contacto de emergencia)</li>
       <li>Tus alergias declaradas y personalizadas</li>
@@ -99,9 +99,13 @@
     <h2>3. Servicios de terceros</h2>
     <p>Algunas funciones opcionales usan proveedores externos para funcionar. Solo tratan lo necesario para ofrecer la función, y no usamos tus datos para publicidad ni perfilado:</p>
     <ul>
-      <li><strong>Asistente IA (AlergiBot):</strong> al usar el chat, la pregunta que escribes y tus alergias configuradas se envían a la API Gemini de Google para generar la respuesta.</li>
+      <li><strong>Funciones de IA (AlergiBot, foto de etiqueta y carta de restaurante):</strong> cuando las usas, la pregunta que escribes o la foto, junto con tus alergias e intolerancias configuradas, se envían a la API Gemini de Google para generar la respuesta. El envío pasa por nuestro servidor intermedio (una función alojada en Supabase), que lo reenvía a Google y no guarda el contenido de las preguntas, las respuestas ni las fotos. <strong>No se envía tu nombre</strong> ni otros datos de tu perfil. Antes del primer uso, la app te explica qué se envía y te pide que lo aceptes.</li>
+      <li><strong>Límites de uso de la IA:</strong> para evitar abusos y controlar el coste, la app genera un identificador aleatorio de dispositivo (no vinculado a tu identidad ni a ningún dato del teléfono) y nuestro servidor guarda contadores diarios de consultas por ese identificador y por una huella cifrada e irreversible de tu dirección IP (nunca la IP en sí). Esos contadores solo contienen la fecha y el número de consultas y <strong>se borran a los 7 días</strong>.</li>
+      <li><strong>Escáner de ingredientes:</strong> si la IA no puede leer la etiqueta, la foto puede enviarse como alternativa al servicio de reconocimiento de texto OCR.space.</li>
       <li><strong>Compras y suscripciones:</strong> gestionadas por Google Play Billing (Android), Apple StoreKit / App Store (iOS) y RevenueCat para procesar y validar las compras.</li>
-      <li><strong>Escáner de ingredientes:</strong> las fotos de listas de ingredientes pueden enviarse a un servicio de reconocimiento de texto (OCR) para leerlas.</li>
+      <li><strong>Estadísticas anónimas de la pantalla Premium:</strong> al abrirla se registra, sin ningún identificador ni dato personal, desde qué función se abrió, la plataforma (iOS/Android) y el resultado (cerrada, compra, etc.).</li>
+      <li><strong>Códigos de regalo:</strong> al canjear un código, solo se envía el código a nuestro servidor (Supabase) para validarlo.</li>
+      <li><strong>Escáner de códigos de barras:</strong> al escanear un producto, se consulta su código en Open Food Facts, una base de datos abierta de alimentos. Solo se envía el número del código de barras, nunca tus alergias ni datos personales.</li>
       <li><strong>Calidad del aire y polen:</strong> se usa tu ubicación aproximada para solicitar datos ambientales a proveedores externos.</li>
       <li>Las búsquedas por código de barras pueden consultar bases de datos públicas de productos.</li>
     </ul>
@@ -115,8 +119,8 @@
       <li><strong>Notificaciones:</strong> para recordatorios de medicación y alertas de polen.</li>
     </ul>
 
-    <h2>5. Sin publicidad, sin venta de datos</h2>
-    <p>AlergiGuard no muestra publicidad de terceros, no vende tus datos personales y no crea perfiles publicitarios.</p>
+    <h2>5. Enlaces de afiliado, sin venta de datos</h2>
+    <p>AlergiGuard muestra recomendaciones de productos alternativos con enlaces de afiliado de Amazon: si compras a través de ellos, podemos recibir una pequeña comisión sin coste para ti. No usamos redes publicitarias, no vendemos tus datos personales y no creamos perfiles publicitarios. La app no envía a Amazon ningún dato tuyo; si abres un enlace, Amazon trata tus datos según su propia política de privacidad.</p>
 
     <h2>6. Conservación y eliminación de datos</h2>
     <p>Como tus datos personales se guardan en local, mantienes el control:</p>
@@ -124,6 +128,7 @@
       <li>Puedes borrar entradas dentro de la app.</li>
       <li>Puedes borrar todos los datos desde los ajustes del dispositivo ("Borrar datos") o desinstalando la app.</li>
     </ul>
+    <p>Los contadores diarios de uso de la IA (identificador aleatorio y huella cifrada de la IP) se borran automáticamente a los 7 días. Nuestro servidor no guarda tus preguntas, respuestas ni fotos; Google las trata según las condiciones de la API Gemini.</p>
     <p>Los registros de compra los gestionan Google Play, Apple (App Store) y RevenueCat según sus políticas.</p>
 
     <h2>7. Menores</h2>
@@ -148,7 +153,7 @@
     <p>AlergiGuard helps people manage food and environmental allergies. We respect your privacy and designed the app to keep your personal health information on your own device. This policy explains what data is processed, why, and with whom.</p>
 
     <h2>2. Data stored on your device (local only)</h2>
-    <p>The following information is stored ONLY locally on your device and is NOT sent to or stored on any AlergiGuard server:</p>
+    <p>The following information is stored ONLY locally on your device and is NOT stored on any AlergiGuard server (only when you use an AI feature is what is described in section 3 sent, once, to generate the answer):</p>
     <ul>
       <li>Your profile and family profiles (name, blood type, emergency contact)</li>
       <li>Your declared allergies and custom allergies</li>
@@ -161,9 +166,13 @@
     <h2>3. Third-party services</h2>
     <p>Some optional features rely on third-party providers to work. These providers process only what is needed to deliver the feature, and we do not use your data for advertising or profiling:</p>
     <ul>
-      <li><strong>AI Assistant (AlergiBot):</strong> when you use the chat, the question you type and your configured allergies are sent to Google's Gemini API to generate a response.</li>
+      <li><strong>AI features (AlergiBot, label photo and restaurant menu):</strong> when you use them, the question you type or the photo, together with your configured allergies and intolerances, is sent to Google's Gemini API to generate the answer. It goes through our intermediate server (a function hosted on Supabase), which forwards it to Google and does not store the content of questions, answers or photos. <strong>Your name is not sent</strong>, nor any other profile data. Before the first use, the app explains what is sent and asks for your agreement.</li>
+      <li><strong>AI usage limits:</strong> to prevent abuse and control costs, the app generates a random device identifier (not linked to your identity or to any phone data) and our server keeps daily query counters per that identifier and per an encrypted, irreversible fingerprint of your IP address (never the IP itself). These counters only hold the date and the number of queries and <strong>are deleted after 7 days</strong>.</li>
+      <li><strong>Ingredient scanner:</strong> if the AI cannot read the label, the photo may be sent to the OCR.space text-recognition service as a fallback.</li>
       <li><strong>Purchases and subscriptions:</strong> handled by Google Play Billing (Android), Apple StoreKit / App Store (iOS) and RevenueCat to process and validate purchases.</li>
-      <li><strong>Ingredient scanner:</strong> photos of ingredient lists may be sent to a text-recognition (OCR) service to read them.</li>
+      <li><strong>Anonymous Premium-screen statistics:</strong> when it opens, we record — with no identifier or personal data — which feature opened it, the platform (iOS/Android) and the outcome (closed, purchase, etc.).</li>
+      <li><strong>Gift codes:</strong> when you redeem a code, only the code is sent to our server (Supabase) to validate it.</li>
+      <li><strong>Barcode scanner:</strong> when you scan a product, its barcode is looked up in Open Food Facts, an open food database. Only the barcode number is sent, never your allergies or personal data.</li>
       <li><strong>Air quality and pollen:</strong> your approximate location is used to request environmental data from external providers.</li>
       <li>Barcode lookups may query public product databases.</li>
     </ul>
@@ -177,8 +186,8 @@
       <li><strong>Notifications:</strong> to send medication reminders and pollen alerts.</li>
     </ul>
 
-    <h2>5. No advertising, no data sale</h2>
-    <p>AlergiGuard does not display third-party advertising, does not sell your personal data, and does not build advertising profiles.</p>
+    <h2>5. Affiliate links, no data sale</h2>
+    <p>AlergiGuard shows alternative product suggestions with Amazon affiliate links: if you buy through them, we may earn a small commission at no extra cost to you. We do not use advertising networks, do not sell your personal data and do not build advertising profiles. The app sends none of your data to Amazon; if you open a link, Amazon processes your data under its own privacy policy.</p>
 
     <h2>6. Data retention and deletion</h2>
     <p>Because your personal data is stored locally, you remain in control of it:</p>
@@ -186,6 +195,7 @@
       <li>You can delete entries within the app.</li>
       <li>You can clear all data via your device settings ("Clear data") or by uninstalling the app.</li>
     </ul>
+    <p>Daily AI usage counters (random identifier and encrypted IP fingerprint) are deleted automatically after 7 days. Our server does not store your questions, answers or photos; Google processes them under the Gemini API terms.</p>
     <p>Purchase records are managed by Google Play, Apple (App Store) and RevenueCat according to their policies.</p>
 
     <h2>7. Children</h2>
